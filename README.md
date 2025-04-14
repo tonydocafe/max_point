@@ -1,61 +1,61 @@
-# TP2 - Algoritmos de Soma Máxima
 
-## Descrição
-Este projeto implementa dois algoritmos para calcular a soma máxima possível de elementos de uma sequência, evitando a seleção de dois elementos consecutivos. As abordagens utilizadas são:
+# TP2 - Maximum Sum Algorithms
 
-- **D**: Algoritmo dinâmico iterativo.
-- **A**: Algoritmo dinâmico recursivo com memoização.
+## Description
+This project implements two algorithms to calculate the maximum possible sum of elements of a sequence, avoiding the selection of two consecutive elements. The approaches used are:
 
-O programa lê uma sequência de números inteiros a partir de um arquivo de entrada e salva os resultados em um arquivo de saída.
+- **D**: Dynamic iterative algorithm.
+- **A**: Dynamic recursive algorithm with memoization.
 
-## Compilação
-Para compilar o programa, utilize o comando:
+The program reads a sequence of integers from an input file and saves the results in an output file.
+
+## Compilation
+To compile the program, use the command:
 
 ```sh
 make
 ```
 
-Isso gerará o executável `tp2`.
+This will generate the `tp2` executable.
 
-## Execução
-Para executar o programa, use o seguinte comando:
-
-```sh
-./tp2 <estrategia> <arquivo_entrada>
-```
-
-Onde:
-- `<estrategia>` pode ser `A` para a versão recursiva ou `D` para a versão iterativa.
-- `<arquivo_entrada>` é o caminho para o arquivo contendo a sequência de números.
-
-Exemplo de uso:
+## Execution
+To execute the program, use the following command:
 
 ```sh
-./tp2 D entrada.txt
+./tp2 <strategy> <input_file>
 ```
 
-O resultado será salvo no arquivo `saida.txt`.
+Where:
+- `<strategy>` can be `A` for the recursive version or `D` for the iterative version.
+- `<input_file>` is the path to the file containing the sequence of numbers.
 
-## Estrutura do Projeto
-O projeto está organizado nos seguintes arquivos:
-- `tp2.c`: Arquivo principal que lê os dados e chama os algoritmos.
-- `menu.c`: Implementa a lógica de seleção do algoritmo e gestão dos arquivos.
-- `estrategias.c`: Contém as implementações dos algoritmos `D` e `A`.
-- `tp2.h`: Cabeçalho com as definições das funções.
-- `Makefile`: Define as regras para compilação e limpeza do projeto.
+Usage example:
 
-## Limpeza
-Para remover os arquivos compilados, utilize:
+```sh
+./tp2 D input.txt
+```
+
+The result will be saved in the file `output.txt`.
+
+## Project Structure
+The project is organized into the following files:
+- `tp2.c`: Main file that reads the data and calls the algorithms.
+- `menu.c`: Implements the algorithm selection and file management logic.
+- `strategies.c`: Contains the implementations of the algorithms `D` and `A`.
+- `tp2.h`: Header with function definitions.
+- `Makefile`: Defines the rules for compiling and cleaning the project.
+
+## Cleaning
+To remove the compiled files, use:
 
 ```sh
 make clean
 ```
 
-Isso removerá os arquivos objeto (`.o`), o executável `tp2` e o arquivo `saida.txt`.
+This will remove the object files (`.o`), the `tp2` executable and the `saida.txt` file.
 
-## Dependências
-O código utiliza apenas a biblioteca padrão do C, não havendo dependências externas.
+## Dependencies
+The code uses only the C standard library, with no external dependencies.
 
-## Autor
+## Author
 Tony Hudson Candido Junior
-
