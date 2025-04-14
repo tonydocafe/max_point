@@ -30,8 +30,9 @@ Este projeto traz duas versões super inteligentes pra resolver isso:
 ## 📦 Como Compilar
 
 Basta digitar:
-
+```sh
 make
+```
 Isso gerará o executável `tp2`.
 
 ## Execução
