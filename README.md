@@ -1,61 +1,34 @@
+# 🧠 TP2 - Algoritmos de Soma Máxima (Sem Vizinho, Por Favor!)
 
-# TP2 - Maximum Sum Algorithms
+Bem-vindo(a) ao **TP2**, um projeto que resolve um problema clássico (e meio ciumento): **como somar os números de uma sequência sem escolher vizinhos**! 😤➡️🚫👫
 
-## Description
-This project implements two algorithms to calculate the maximum possible sum of elements of a sequence, avoiding the selection of two consecutive elements. The approaches used are:
+Imagine que você está escolhendo presentes numa fila... mas toda vez que você pega um presente, o da esquerda e o da direita ficam indisponíveis. Qual é a **maior soma possível** que você pode conseguir?
 
-- **D**: Dynamic iterative algorithm.
-- **A**: Dynamic recursive algorithm with memoization.
+---
 
-The program reads a sequence of integers from an input file and saves the results in an output file.
+## 🧩 O Problema
 
-## Compilation
-To compile the program, use the command:
+Este é o famoso problema conhecido como:
 
-```sh
+> **Maximum Sum of Non-Adjacent Elements**  
+> Ou, no mundo dos algoritmos, carinhosamente apelidado de **"Problema do Ladrão de Casas" (House Robber Problem)** 🏠💰
+
+---
+
+## 🛠️ Algoritmos Implementados
+
+Este projeto traz duas versões super inteligentes pra resolver isso:
+
+- 🔁 **D**: *Dinâmico Iterativo*  
+  Nossa versão atleta! Resolve tudo no braço, usando laços e armazenamento progressivo. É rápido e objetivo. 💪
+
+- 🔄 **A**: *Dinâmico Recursivo com Memoização*  
+  Mais filosófico, esse pensa antes de agir, mas com boa memória. Vai recursivamente e guarda resultados pra não repetir trabalho. 🧘‍♂️🧠
+
+---
+
+## 📦 Como Compilar
+
+Basta digitar:
+
 make
-```
-
-This will generate the `tp2` executable.
-
-## Execution
-To execute the program, use the following command:
-
-```sh
-./tp2 <strategy> <input_file>
-```
-
-Where:
-- `<strategy>` can be `A` for the recursive version or `D` for the iterative version.
-- `<input_file>` is the path to the file containing the sequence of numbers.
-
-Usage example:
-
-```sh
-./tp2 D input.txt
-```
-
-The result will be saved in the file `output.txt`.
-
-## Project Structure
-The project is organized into the following files:
-- `tp2.c`: Main file that reads the data and calls the algorithms.
-- `menu.c`: Implements the algorithm selection and file management logic.
-- `strategies.c`: Contains the implementations of the algorithms `D` and `A`.
-- `tp2.h`: Header with function definitions.
-- `Makefile`: Defines the rules for compiling and cleaning the project.
-
-## Cleaning
-To remove the compiled files, use:
-
-```sh
-make clean
-```
-
-This will remove the object files (`.o`), the `tp2` executable and the `saida.txt` file.
-
-## Dependencies
-The code uses only the C standard library, with no external dependencies.
-
-## Author
-Tony Hudson Candido Junior
